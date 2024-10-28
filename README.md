@@ -12,6 +12,7 @@ ShellBrunbaix is a basic shell written in C that reads user input, tokenizes the
 - Handles simple error cases and displays appropriate messages.
 - Allows exiting the shell with the `exit` command.
 - Allows to change directory with `cd`.
+- Prompt change based on the `username` & the `current directory`.
 
 ### Future Improvements
 
