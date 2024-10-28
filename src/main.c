@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h> 
+
 #include "shell.h"
 
 /**
@@ -32,6 +34,11 @@ main() {
     while (1) {
 
         get_user_input(&buffer, &bufsize);
+
+        if (strncmp(buffer, "cd ", 3) == 0) {
+            change_directory(buffer);
+            continue;
+        }
 
         if (strcmp(buffer, "exit") == 0) {
             break;

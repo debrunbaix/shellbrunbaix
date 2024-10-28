@@ -6,5 +6,6 @@
 
 void tokenize(char *buffer, char **args);
 void execute(char **args);
+void change_directory(char *buffer);
 
 #endif

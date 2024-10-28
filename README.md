@@ -2,7 +2,7 @@
 
 ## Description
 
-ShellBrunbaix is a basic shell written in C that reads user input, tokenizes the input, and executes commands. It mimics some basic functionalities of standard Unix shells by allowing users to execute external commands like `ls`, `pwd`, `echo`, etc., and includes the ability to exit the shell with the `exit` command.
+ShellBrunbaix is a basic shell written in C that reads user input, tokenizes the input, and executes commands. It mimics some basic functionalities of standard Unix shells by allowing users to execute external commands like `ls`, `pwd`, `echo`, etc., and includes the ability to exit the shell with the `exit` command and to change directory with the `cd` command.
 
 ### Features
 
@@ -11,12 +11,12 @@ ShellBrunbaix is a basic shell written in C that reads user input, tokenizes the
 - Uses `fork` and `execvp` to execute external commands in child processes.
 - Handles simple error cases and displays appropriate messages.
 - Allows exiting the shell with the `exit` command.
+- Allows to change directory with `cd`.
 
 ### Future Improvements
 
 Here are some features that could be added to enhance the functionality of ShellBrunbaix:
 
-- **Built-in Commands**: Support additional built-in commands like `cd` to change directories.
 - **Input/Output Redirection**: Allow users to redirect the output of commands using `>` or `<`.
 - **Pipe Handling**: Implement support for piping (`|`) between commands.
 - **Command History**: Keep track of previously entered commands and allow the user to access them.
@@ -58,8 +58,3 @@ To compile and run the ShellBrunbaix, follow these steps:
 
     - Enter commands like `ls`, `pwd`, or `echo Hello`.
     - Type `exit` to close the shell.
-
-## Project Structure
-
-The project is organized into the following files:
-
