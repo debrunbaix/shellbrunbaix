@@ -34,6 +34,7 @@ get_user_input(char **buffer, size_t *bufsize, const char *prompt) {
  */
 void
 get_prompt(char *prompt, size_t size) {
+    
     char current_directory[PATH_MAX];
     char user[64];
 
@@ -41,7 +42,7 @@ get_prompt(char *prompt, size_t size) {
     strncpy(user, getlogin(), sizeof(user) - 1);
     user[sizeof(user) - 1] = '\0';
 
-    snprintf(prompt, size, "%s @ %s /> ", user, current_directory);
+    snprintf(prompt, size, "[\x1B[36m%s\x1B[37m] in [\x1B[36m%s\x1B[37m]/> ", user, current_directory);
 }
 
 int 

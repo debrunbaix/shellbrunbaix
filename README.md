@@ -1,10 +1,10 @@
 # ShellBrunbaix
 
-## Description
+## Description 📜
 
 ShellBrunbaix is a basic shell written in C that reads user input, tokenizes the input, and executes commands. It mimics some basic functionalities of standard Unix shells by allowing users to execute external commands like `ls`, `pwd`, `echo`, etc., and includes the ability to exit the shell with the `exit` command and to change directory with the `cd` command.
 
-### Features
+### Features ⚙️
 
 - Reads and processes user commands.
 - Tokenizes the input into command and arguments.
@@ -14,25 +14,40 @@ ShellBrunbaix is a basic shell written in C that reads user input, tokenizes the
 - Allows to change directory with `cd`.
 - Prompt change based on the `username` & the `current directory`.
 
-### Future Improvements
+### Future Improvements 🔄
 
 Here are some features that could be added to enhance the functionality of ShellBrunbaix:
 
 - **Input/Output Redirection**: Allow users to redirect the output of commands using `>` or `<`.
 - **Pipe Handling**: Implement support for piping (`|`) between commands.
 - **Command History**: Keep track of previously entered commands and allow the user to access them.
-- **Signal Handling**: Manage interrupts (e.g., `Ctrl+C`) gracefully to prevent the shell from closing abruptly.
 - **Autocomplete**: Add support for tab-completion of commands and file paths.
 
-## Compilation and Execution
+### File Structure 📂
+
+```bash
+├── include
+│   └── shell.h
+├── LICENSE
+├── Makefile
+├── README.md
+└── src
+    ├── config.c
+    ├── executor.c
+    ├── intern.c
+    ├── main.c
+    └── parser.c
+```
+
+## Compilation and Execution 🛠️
 
 To compile and run the ShellBrunbaix, follow these steps:
 
 1. **Clone the Repository** (if hosted on GitHub):
 
     ```bash
-    git clone https://github.com/your-username/ShellBrunbaix.git
-    cd ShellBrunbaix
+    git clone https://github.com/your-username/shellbrunbaix.git
+    cd shellbrunbaix
     ```
 
 2. **Compile the Source Code**:
